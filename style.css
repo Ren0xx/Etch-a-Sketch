@@ -1,0 +1,20 @@
+body{
+    margin: 150px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 0.1em;
+    height: 80vh;
+    width: 80vh;
+    margin: 0 auto;
+
+}
+
+.grid--item{
+    display: flex;
+    border: 1px solid black;
+    
+}
