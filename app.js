@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const buttons = document.querySelector('.buttons')
 
 
 function makeRows(per_side) {
@@ -19,5 +20,15 @@ divs.forEach(div => {
     
 });
 
-// const button = document.createElement('button');
-// button.textContent = 'restart';
+
+const button = document.createElement('button');
+button.textContent = 'Restart';
+buttons.appendChild(button).className = "restart--button";
+
+
+// button.addEventListener("click", function( event ){
+
+// })
+
+
+

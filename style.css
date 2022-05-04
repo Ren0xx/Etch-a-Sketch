@@ -10,8 +10,7 @@ body{
     display: grid;
     height: 80vh;
     width: 80vh;
-    margin: 0 auto;
-
+    margin: 0 auto;    
     grid-gap: 0.25em;
     grid-template-rows: repeat(var(--grid-per_side), 1fr);
     grid-template-columns: repeat(var(--grid-per_side), 1fr);
@@ -22,3 +21,14 @@ body{
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
   }
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3.5em;
+}
+.restart--button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
