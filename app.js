@@ -1,11 +1,14 @@
 const container = document.querySelector('.container');
 
-//creating 16 x 16 divs
-for (let i = 0; i < 256; i++) {
-    let div = document.createElement('div');
-    div.setAttribute('class', 'grid--item');
-    container.appendChild(div);
-}
+
+function makeRows(per_side) {
+    container.style.setProperty('--grid-per_side', per_side);
+    for (c = 0; c < (per_side * per_side); c++) {
+      let cell = document.createElement("div");
+      container.appendChild(cell).className = "grid--item";
+    };
+  };
+makeRows(16); // staring point
 
 const divs = container.querySelectorAll('div');
 
@@ -15,3 +18,6 @@ divs.forEach(div => {
     },)
     
 });
+
+// const button = document.createElement('button');
+// button.textContent = 'restart';

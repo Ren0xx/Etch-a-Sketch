@@ -1,23 +1,24 @@
+:root {
+    --grid-per_side: 1;
+  }
+
 body{
     margin: 150px;
 }
 
 .container{
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    gap: 0.1em;
     height: 80vh;
     width: 80vh;
     margin: 0 auto;
 
+    grid-gap: 0.25em;
+    grid-template-rows: repeat(var(--grid-per_side), 1fr);
+    grid-template-columns: repeat(var(--grid-per_side), 1fr);
+
 }
 
-.grid--item{
-    display: flex;
-    border: 1px solid black;
-    
-}
-/* .grid--item:hover{
-    background-color: black;
-} */
+.grid--item {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+  }
