@@ -11,7 +11,7 @@ body{
     height: 80vh;
     width: 80vh;
     margin: 0 auto;    
-    grid-gap: 0.25em;
+    grid-gap: 0.1em;
     grid-template-rows: repeat(var(--grid-per_side), 1fr);
     grid-template-columns: repeat(var(--grid-per_side), 1fr);
 
