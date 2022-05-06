@@ -8,13 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="buttons">
-            <!--  -->
-        </div>
-        <div class="container">
-            <!--  -->
-        </div>
+        <div class="page">
+            <div class="slider">
+                <label id="slider--label">Set size of the grid and press the button.</label>
+                <input id="input" type="range" min="4" max="64" name="slider" step="1" value="">
+                <div class="buttons"></div>
+            </div>
+                <!--  -->
+            <div class="main">
+                <h2 class="header">Etch-a-Sketch</h2>
+                <div class="container"></div>                
+            </div>
+        </div>  
+        
         <script src="app.js" async defer></script>
     </body>
 </html>
