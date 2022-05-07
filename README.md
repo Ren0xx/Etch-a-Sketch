@@ -5,6 +5,6 @@
 Moving again on already colored square will cause it to go darker.
 Hovering the same square over, and over again, will make it full dark after some time.
 
-## You can make your grid to a maximum of 100 x 100, but setting larger than 64 x 64 is not recommended.
+## You can make your grid to a maximum of 100 x 100, but setting larger than 64 x 64, is not recommended.
 
 #### [Etch-a-Sketch](https://ren0xx.github.io/Etch-a-Sketch/)
