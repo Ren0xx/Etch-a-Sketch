@@ -23,28 +23,37 @@ function creatingColorsForDivs(divs) {
 
 const container = document.querySelector(".container");
 const buttons = document.querySelector(".buttons");
-const restartButton = document.createElement("button");
+const clearButton = document.createElement("button");
+const newGridButton = document.createElement("button");
+let currentSize = 16;
 
-restartButton.textContent = "Restart";
-buttons.appendChild(restartButton).className = "restart--button";
+newGridButton.textContent = "Make a new grid";
+clearButton.textContent = "Clear";
+buttons.appendChild(newGridButton).className = "newGrid--button";
+buttons.appendChild(clearButton).className = "clear--button";
 
-makeGrid(16); // staring point
-
-const divs = container.querySelectorAll("div");
+makeGrid(currentSize); // staring point
+let divs = container.querySelectorAll("div");
 creatingColorsForDivs(divs);
 
-restartButton.addEventListener("click", function () {
-  let result = window.prompt(
-    "How big should new grid be(in squares per side)?",
-    12
-  );
-  result = parseInt(result);
-  if (!Number.isInteger(result) || result <= 0 || result > 100) {
-    alert("Please enter a number within range (1, 100)");
-  } else {
-    container.replaceChildren();
-    makeGrid(result);
-    const divs = container.querySelectorAll("div");
-    creatingColorsForDivs(divs);
-  }
+clearButton.addEventListener("click", () => {
+  container.replaceChildren();
+  makeGrid(currentSize);
+  let divs = container.querySelectorAll("div");
+  creatingColorsForDivs(divs);
 });
+
+newGridButton.addEventListener("click", () => {
+  const newSize = document.getElementById("input").value;
+  currentSize = newSize;
+  container.replaceChildren();
+  makeGrid(currentSize);
+  let divs = container.querySelectorAll("div");
+  creatingColorsForDivs(divs);
+});
+
+function showSize(x) {
+  const b = (document.getElementById(
+    "value--label"
+  ).textContent = `${x} X ${x}`);
+}

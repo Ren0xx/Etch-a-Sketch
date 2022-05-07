@@ -11,7 +11,8 @@
         <div class="page">
             <div class="slider">
                 <label id="slider--label">Set size of the grid and press the button.</label>
-                <input id="input" type="range" min="4" max="64" name="slider" step="1" value="">
+                <input id="input" oninput="showSize(this.value) "type="range" min="16" max="64" value="32" step="2">
+                <label id="value--label">32 X 32</label>
                 <div class="buttons"></div>
             </div>
                 <!--  -->

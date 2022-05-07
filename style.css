@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 :root {
     --grid-per_side: 1;
-  }
+}
 *{
     font-family: 'Carter One', cursive;
+    
 }
 body{
     margin: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
+    background-color: #ecece0;
 }
 .page{
     display: flex;
@@ -19,8 +22,20 @@ body{
 }
 .slider{
     display: flex;
+    padding: 0.5em;
+    gap: 0.25em;
     flex-flow: column wrap;
     align-items: center;
+    background-color: azure;
+    border: 0.2em ridge rgb(223, 162, 238);
+    border-radius: 0.5em;
+    font-size: 17px;
+    
+}
+#slider--label{
+    font-size: 1em;
+    max-width: 15ch;
+    text-align: center;
 }
 .main{
     display: flex;
@@ -32,16 +47,23 @@ body{
     justify-content: center;
     align-items: center;
     margin: 1.5em;
+    gap: 0.5em;
+    background-color: #ecece0;
+
+}
+.newGrid--button, .clear--button{
+    width: 100px;
+    height: 50px;
+    font-size: 0.90em;    
 }
 .container{
     display: grid;
     grid-template-rows: repeat(var(--grid-per_side), 1fr);
     grid-template-columns: repeat(var(--grid-per_side), 1fr);
-    height: 60vh;
-    width: 60vh;
+    height: 70vh;
+    width: 70vh;
     margin: auto;    
     border: 1px solid rgb(139, 137, 137);
-
 }
 .grid--item {
     border: 0.5px solid rgb(201, 201, 183);
@@ -50,16 +72,12 @@ body{
 }
 .header{
     font-size: 36px;
-    background: -webkit-linear-gradient(#eee, rgb(7, 71, 190));
+    background: -webkit-linear-gradient(rgb(229, 210, 243), rgb(74, 7, 129));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
-.restart--button{
-    font-size: 1.25em;
-}
-#slider--label{
-    font-size:15px;
-    max-width: 15ch;
-    text-align: center;
+#input{
+    cursor: pointer;
 }
