@@ -7,18 +7,14 @@
     
 }
 body{
-    margin: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: scroll;
-    background-color: #ecece0;
-}
-.page{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3em;
+    margin: 150px;
+    overflow: scroll;
+    background-color: #ecece0;
+    
 }
 .slider{
     display: flex;

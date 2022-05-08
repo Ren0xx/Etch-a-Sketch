@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Etch-a-Sketch</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-        <div class="page">
-            <div class="slider">
-                <label id="slider--label">Set size of the grid and press the button.</label>
-                <input id="input" oninput="showSize(this.value) "type="range" min="16" max="64" value="32" step="2">
-                <label id="value--label">32 X 32</label>
-                <div class="buttons"></div>
-            </div>
-                <!--  -->
-            <div class="main">
-                <h2 class="header">Etch-a-Sketch</h2>
-                <div class="container"></div>                
-            </div>
-        </div>  
-        
-        <script src="app.js" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Etch-a-Sketch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slider">
+        <label id="slider--label">Set size of the grid and press the button.</label>
+        <input id="input" oninput="showSize(this.value) " type="range" min="16" max="64" value="32" step="2">
+        <label id="value--label">32 X 32</label>
+        <div class="buttons"></div>
+    </div>
+    <!--  -->
+    <div class="main">
+        <h2 class="header">Etch-a-Sketch</h2>
+        <div class="container"></div>
+    </div>
+
+
+    <script src="app.js" async defer></script>
+</body>
+
 </html>
